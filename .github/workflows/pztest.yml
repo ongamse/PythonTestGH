@@ -24,6 +24,7 @@ jobs:
         ${GITHUB_WORKSPACE}/sl analyze --strict --wait \
           --app PythonTestGH \
           --tag branch=${{ github.head_ref }} \
+          --container alpine/curl:8.3.0 
          
       env:
         SHIFTLEFT_ACCESS_TOKEN: ${{ secrets.SHIFTLEFT_ACCESS_TOKEN }}
