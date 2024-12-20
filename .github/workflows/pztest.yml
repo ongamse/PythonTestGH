@@ -9,7 +9,7 @@ on:
 
 jobs:
   NextGen-Static-Analysis:
-    runs-on: ubuntu-20.08
+    runs-on: ubuntu:latest
     steps:
     - uses: actions/checkout@v3
     - name: Download ShiftLeft CLI
